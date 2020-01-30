@@ -15,6 +15,6 @@ ax = fig.add_subplot(111,polar = True)
 ax.plot(angles,stats,'o-',linewidth=2)
 ax.fill(angles,stats,alpha=0.25)
 #设置中文字体
-font = FontProperties(fname=r"/ttf",size = 14)
+font = FontProperties(fname="/System/Library/Fonts/STHeiti Medium.ttc", size=14)
 ax.set_thetagrids(angles * 180/np.pi,labels,FontProperties=font)
 plt.show()
